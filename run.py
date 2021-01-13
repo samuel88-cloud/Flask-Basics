@@ -10,7 +10,8 @@ app = Flask(__name__)
 app.config.update(
 
     SECRET_KEY='topsecret',
-    SQLALCHEMY_DATABASE_URI='postgresql://postgres:1234@localhost/catalog_db',
+    #enter password
+    SQLALCHEMY_DATABASE_URI='postgresql://postgres:@localhost/catalog_db',
     SQLALCHEMY_TRACK_MODIFICATIONS=False
 )
 
